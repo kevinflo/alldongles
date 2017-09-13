@@ -61,3 +61,16 @@ typings/
 /.idea
 /.eslintrc
 /alldongles.iml
+
+
+public/semantic/dist/*
+public/semantic/gulpfile.js
+public/semantic/src/definitions
+public/semantic/src/semantic.less
+public/semantic/src/theme.less
+public/semantic/src/themes
+public/semantic/tasks
+!public/semantic/dist/semantic.min.css
+!public/semantic/dist/semantic.min.js
+/public/semantic/src/site*
+!/public/semantic/dist/sidetheme.min.css
