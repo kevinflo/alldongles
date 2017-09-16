@@ -73,4 +73,10 @@ public/semantic/tasks
 !public/semantic/dist/semantic.min.css
 !public/semantic/dist/semantic.min.js
 /public/semantic/src/site*
-!/public/semantic/dist/sidetheme.min.css
+
+
+.DS_Store
+public/.DS_Store
+public/semantic/.DS_Store
+public/semantic/dist/sidetheme.min.css
+public/semantic/src/.DS_Store
