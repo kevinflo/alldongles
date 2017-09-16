@@ -10,10 +10,23 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var hbs = require('hbs');
 
+// hbs.registerPartial('/views/partials/shareButtons', '{{shareButtons}}');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+// app.engine('hbs', hbs({
+//     extname: 'hbs',
+//     defaultLayout: 'base',
+//     layoutDir: __dirname + '/views/layouts',
+//     partialsDir  : [
+//         //  path to your partials
+//         __dirname + '/views/partials'
+//     ]
+// }));
+// hbs.registerPartial('/views/partials/shareButtons', 'shareButtons');
+hbs.registerPartials(__dirname + '/views/partials');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
